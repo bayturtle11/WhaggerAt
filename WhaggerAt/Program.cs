@@ -115,9 +115,32 @@ namespace WhaggerAt
         //when run or main process
         static void Main(string[] args)
         {
+            Console.WriteLine(
+                @"   #    #    ##     ####   ######  #####         ##    #####   ##### " + "\n" +
+                @"   #    #  #    #  #       #####   #    #      #    #  #    #  #    # " + "\n" +
+                @"   # ## #  ######  #  ###  #       #####       ######  #####   #####  " + "\n" +
+                @"   ##  ##  #    #  #    #  #       #   #       #    #  #       #      " + "\n" +
+                @"   #    #  #    #   ####   ######  #    #      #    #  #       #      " + "\n"
+                                                                );
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+
+            Console.WriteLine("" +
+                "INTRODUTION" +
+                "Wages app all calculate the wages for each employee\n and display the hours worked for the week." +
+                "It wil\n produce an employee summary, showing the tax to be\n deducted and the total amount owed" +
+                "lastly,\n Wages app will display which employee worked the most hours for the week\n");
+
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n");
+
+            Console.WriteLine("Press enter to continue. . .");
+            Console.ReadLine();
+            Console.Clear();
+
             string flagMain = "";
             while (!flagMain.Equals("XXX"))
             {
+                Console.WriteLine("----------- Employee Details -----------\n");
+
                 OneEmployee();
 
                 flagMain = CheckFlag();
