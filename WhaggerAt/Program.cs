@@ -125,8 +125,8 @@ namespace WhaggerAt
             Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
 
             Console.WriteLine("" +
-                "INTRODUTION" +
-                "Wages app all calculate the wages for each employee\n and display the hours worked for the week." +
+                "INTRODUTION:\n" +
+                " Wages app all calculate the wages for each employee\n and display the hours worked for the week." +
                 "It wil\n produce an employee summary, showing the tax to be\n deducted and the total amount owed" +
                 "lastly,\n Wages app will display which employee worked the most hours for the week\n");
 
@@ -144,6 +144,9 @@ namespace WhaggerAt
                 OneEmployee();
 
                 flagMain = CheckFlag();
+
+                Console.Clear();
+
             }
             Console.WriteLine($"{topEarner} has the most hours worked: {topEarnerHours}hrs");
 
